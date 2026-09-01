@@ -43,7 +43,7 @@ mainLoop:
     cbi PORTC, PORTC3
 
     ; kill some time
-    ldi R16, 40                 ; R16 is outer loop counter
+    ldi R16, 23                 ; R16 is outer loop counter
 outer_loop1:
     ldi R24, low(0x4000)        ; load low and high parts of R25:R24 pair with
     ldi R25, high(0x4000)       ; loop count by loading registers separately
@@ -57,7 +57,7 @@ outer_loop1:
     sbi PORTC, PORTC3
 
     ; kill some time
-    ldi R16, 40                 ; R16 is outer loop counter
+    ldi R16, 91                 ; R16 is outer loop counter
 outer_loop2:
     ldi R24, low(0x4000)        ; load low and high parts of R25:R24 pair with
     ldi R25, high(0x4000)       ; loop count by loading registers separately
